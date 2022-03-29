@@ -108,7 +108,7 @@ while True:
                             removed.append((section["building"], section["room"]))
                         else:
                             continue
-
+    remove = False
     with open(f"{term}.json", "r") as f:
         json_data = json.loads(f.read())
         for request in json_data["array"]:
